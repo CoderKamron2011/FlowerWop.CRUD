@@ -7,7 +7,7 @@ namespace FlowerWop.Brokers.Storage
         Flower ReadFlower(int id);
         Flower[] GetAllFlowers();
         Flower AddFlower(Flower flower);
-        Flower Update(Flower flower);
+        Flower Update(int id, Flower flower);
         bool Delete(int id);
     }
 }
