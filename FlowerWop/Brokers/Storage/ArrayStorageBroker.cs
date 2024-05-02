@@ -105,5 +105,10 @@ namespace FlowerWop.Brokers.Storage
 
             return new Flower();
         }
+
+        public Flower Update(int id, Flower flower)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
