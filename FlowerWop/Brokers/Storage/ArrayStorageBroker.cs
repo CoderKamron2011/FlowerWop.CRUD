@@ -93,6 +93,7 @@ namespace FlowerWop.Brokers.Storage
                     {
                         Flowers[itaration] = new Flower()
                         {
+                            Id = flower.Id,
                             Name = flower.Name,
                             Color = flower.Color,
                             Cost = flower.Cost,

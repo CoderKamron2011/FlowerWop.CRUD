@@ -159,6 +159,7 @@ namespace FlowerWop.Services
 
         private Flower ValidationAndGetFlower(int id)
         {
+            Flower flowers = this.storageBroker.ReadFlower(id);
             Flower isFlower = this.storageBroker.ReadFlower(id);
             if (isFlower is not null)
             {
