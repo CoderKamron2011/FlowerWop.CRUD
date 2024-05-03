@@ -1,7 +1,7 @@
 ﻿using FlowerWop.Models;
 using FlowerWop.Services;
 
-namespace FlowerShop.CRUD
+namespace FlowerWop.CRUD
 {
     class Program
     {
@@ -41,9 +41,9 @@ namespace FlowerShop.CRUD
                         flowerService.RemoveFlower(flowerDeleteByid);
                         break;
                     case "4":
-                        Console.Write("Exsist infotrmation, enter id:  ");
-                        int id = Convert.ToInt32(Console.ReadLine());
                         Flower flower = new Flower();
+                        Console.Write("Enter your flower id: ");
+                        int flowerUpdateByid = Convert.ToInt32(Console.ReadLine());
                         Console.Write("Enter flower name : ");
                         flower.Name = Console.ReadLine();
                         Console.Write("Enter flower color : ");
@@ -53,7 +53,7 @@ namespace FlowerShop.CRUD
                         Console.Write("Enter flower discreption : ");
                         flower.Discreption = Console.ReadLine();
 
-                        flowerService.ModifyFlower(id, flower);
+                        flowerService.ModifyFlower(flowerUpdateByid, flower);
                         break;
                     case "5":
                         Flower flowerCreate = new Flower();
